@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div class="menuC">
+            <h2 style="margin: auto;" onclick="document.getElementById('menu').classList.toggle('hidden'); this.style.margin = { '': 'auto', 'auto': '' }[this.style.margin];">Menu</h2>
+            <div class="menu hidden" id="menu">
+                <button id="reset">Наново</button>
+                <h3 id="pC">Всего точек: 0</h3>
+                <div class="set-lc">
+                    <input id="colorValue" placeholder="Цвет: rgb(r, g, b)" type="text">
+                    <button id="setColor">Установить</button>
+                </div>
+                <div class="set-lc">
+                    <input id="delayValue" placeholder="Задержка:" type="text">
+                    <button id="setDelay">Установить</button>
+                </div>
+                <div class="set-lc">
+                    <input id="radiusValue" placeholder="Радиус:" type="text">
+                    <button id="setRadius">Установить</button>
+                </div>
+            </div>
+            
+        </div>
+        <script src="./main.js" async defer></script>
+    </body>
+</html>

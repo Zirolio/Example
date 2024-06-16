@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div class="menuC">
+            <h2 style="margin: auto;" onclick="document.getElementById('menu').classList.toggle('hidden'); this.style.margin = { '': 'auto', 'auto': '' }[this.style.margin];">Menu</h2>
+            <div class="menu hidden" id="menu">
+                <button id="rand-color">Случайные цвета</button>
+                <button id="rand-speed">Случайная скорость</button>
+                <button id="rand-pos">Случайная позиция</button>
+                <button id="rand-vec">Случайное направление</button>
+                <button id="rand-size">Случайный размер</button>
+                <button id="rainbow">Радужный цвет</button>
+                <div class="set-lc">
+                    <input id="colorValue" placeholder="Color: rgb(r, g, b)" type="text">
+                    <button id="setColor">Установить</button>
+                </div>
+                <div class="set-lc">
+                    <input id="radiusValue" placeholder="Radius:" type="text">
+                    <button id="setRadius">Установить</button>
+                </div>
+                <div class="set-lc">
+                    <input id="speedValue" placeholder="Speed:" type="text">
+                    <button id="setSpeed">Установить</button>
+                </div>
+            </div>
+            
+        </div>
+        <script src="./main.js" async defer></script>
+    </body>
+</html>
